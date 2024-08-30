@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FirstProgram</string>
+    <string name="result">result</string>
+    <string name="plus">plus\n</string>
+</resources>
