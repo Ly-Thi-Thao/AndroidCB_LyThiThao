@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvSoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số A:"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editsoa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/tvSoA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số B:"
+        app:layout_constraintTop_toBottomOf="@id/editsoa"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editsoB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/tvSoB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FFB6C1"
+        app:layout_constraintTop_toBottomOf="@id/editsoB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnTong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TỔNG 2 SỐ"
+        app:layout_constraintTop_toBottomOf="@id/tvKetQua"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnHieu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="HIỆU 2 SỐ"
+        app:layout_constraintTop_toBottomOf="@id/btnTong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnTich"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TÍCH 2 SỐ"
+        app:layout_constraintTop_toBottomOf="@id/btnHieu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnThuong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="THƯƠNG 2 SỐ"
+        app:layout_constraintTop_toBottomOf="@id/btnTich"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnUCLN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ƯỚC CHUNG LỚN NHẤT"
+        app:layout_constraintTop_toBottomOf="@id/btnThuong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="THOÁT CHƯƠNG TRÌNH"
+        app:layout_constraintTop_toBottomOf="@id/btnUCLN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
